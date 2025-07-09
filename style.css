@@ -58,7 +58,7 @@ body {
 
 .container{
     width: 960px;
-    margin: auto;
+    margin: 15px auto;
     background-color: #fff;
     border: 1px solid #eaeaea;
 }
@@ -92,7 +92,7 @@ body {
 
 .hero{
     height:320px;
-    background-image: url(img/Tentang.png);
+    background-image: url(img/istana-siak.jpg);
     background-size: cover;
     background-position: 0 -140px;
     border-top: 5px solid salmon;
@@ -150,9 +150,8 @@ footer p{
 }
 
 .sidebar img{
-    height:70px;
-    width:70px;
     float:left;
+    border-radius: 20px;
     padding-right: 10px;
 }
 
