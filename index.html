@@ -14,7 +14,7 @@
       <h1 class="judul">Biografi Pahlawan Sultan Syarif Kasim II</h1>
       <ul>
         <li><a href="#">Beranda</a></li>
-        <li><a href="#">Profil</a></li>
+        <li><a href="#" onclick="bukaPopup()">Profil</a></li>
         <li><a href="#">Perjuangan</a></li>
         <li><a href="#">Galeri</a></li>
         <li><a href="#">Kontak</a></li>
@@ -51,9 +51,52 @@
       </div>
     </div>
 
+    <!-- Popup Profil -->
+    <div id="popupProfil" class="popup-overlay">
+      <div class="popup-content">
+        <span class="close-btn" onclick="tutupPopup()">&times;</span>
+        <h2>Profil Lengkap Sultan Syarif Kasim II</h2>
+        <p>
+          Sultan Syarif Kasim II adalah pemimpin terakhir Kesultanan Siak Sri Indrapura. Lahir pada tahun 1893 di Siak, Riau, beliau dikenal karena pengabdian dan pengorbanannya terhadap kemerdekaan Indonesia. Setelah Proklamasi Kemerdekaan pada 17 Agustus 1945, Sultan Syarif Kasim II menyatakan dukungan penuh terhadap Republik Indonesia dan bahkan menyerahkan kekuasaan serta kekayaannya demi negara.
+        </p>
+        <p>
+          Beliau juga menjadi simbol pemersatu karena berhasil menyatukan masyarakat Melayu di bawah panji NKRI. Atas jasa-jasanya, beliau diangkat sebagai Pahlawan Nasional dan dikenang sebagai tokoh yang rela melepaskan tahta demi tanah air.
+        </p>
+
+        <div class="foto-gallery">
+          <h3>Galeri Foto</h3>
+          <div class="foto-slot">
+            <img src="img/foto1.jpg" alt="Foto Sultan 1" />
+            <img src="img/foto2.jpg" alt="Foto Sultan 2" />
+            <img src="img/foto3.jpg" alt="Foto Sultan 3" />
+            <!-- Tambahkan lebih banyak jika diperlukan -->
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer>
       <p>© 2025. Biografi Sultan Syarif Kasim II | nurfisyahlan</p>
     </footer>
   </div>
 </body>
+
+  <script>
+    function bukaPopup() {
+      document.getElementById("popupProfil").classList.add("show");
+    }
+
+    function tutupPopup() {
+      document.getElementById("popupProfil").classList.remove("show");
+    }
+
+    window.onclick = function(event) {
+      const popup = document.getElementById("popupProfil");
+      if (event.target === popup) {
+        popup.classList.remove("show");
+      }
+    }
+  </script>
+
+
 </html>

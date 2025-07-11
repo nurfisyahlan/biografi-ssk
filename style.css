@@ -163,6 +163,83 @@ footer p{
     padding-right:10px;
 }
 
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Saat popup aktif */
+.popup-overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Konten Popup */
+.popup-content {
+  background: #fff;
+  padding: 30px;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+
+  transform: translateY(-20px);
+  transition: transform 0.3s ease;
+}
+
+/* Saat popup aktif, konten muncul turun sedikit */
+.popup-overlay.show .popup-content {
+  transform: translateY(0);
+}
+
+/* Tombol Tutup */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Galeri Foto */
+.foto-gallery {
+  margin-top: 20px;
+}
+
+.foto-gallery h3 {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.foto-slot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.foto-slot img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
 
 /* clearfix */
 .cf:before,
@@ -182,3 +259,4 @@ footer p{
 .cf {
     zoom: 1;
 }
+
