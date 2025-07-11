@@ -50,7 +50,7 @@ table {
 
 /* style */
 body {
-    font: 16px/28px arial, sans-serif;
+    font: 16px/28px poppins, sans-serif;
     background-color: #eaeaea;
     color: #333;
     background-image: url(img/latar-pngtree.png);
@@ -150,13 +150,15 @@ footer p{
 }
 
 .sidebar img{
+    height: 100px;
+    width: 120px;
     float:left;
     border-radius: 20px;
     padding-right: 10px;
 }
 
 .sidebar p{
-    font: 12px/18px arial;
+    font: 12px/18px poppins;
     text-align: justify;
     padding-right:10px;
 }
