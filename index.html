@@ -15,7 +15,7 @@
       <ul>
         <li><a href="#">Beranda</a></li>
         <li><a href="#" onclick="bukaPopup()">Profil</a></li>
-        <li><a href="#">Perjuangan</a></li>
+        <li><a href="#" onclick="bukaPopupPerjuangan()">Perjuangan</a></li>
         <li><a href="#">Galeri</a></li>
         <li><a href="#">Kontak</a></li>
       </ul>
@@ -75,6 +75,30 @@
       </div>
     </div>
 
+    <!-- Popup Perjuangan -->
+    <div id="popupPerjuangan" class="popup-overlay">
+      <div class="popup-content">
+        <span class="close-btn" onclick="tutupPopupPerjuangan()">&times;</span>
+        <h2>Perjuangan Sultan Syarif Kasim II</h2>
+        <p>
+          Sultan Syarif Kasim II menunjukkan keberpihakannya kepada Republik Indonesia dengan secara sukarela menyerahkan kekuasaan Kesultanan Siak Sri Indrapura. Tidak hanya itu, beliau juga menyumbangkan sebagian besar hartanya untuk mendukung perjuangan kemerdekaan.
+        </p>
+        <p>
+          Beliau aktif membujuk raja-raja lain di wilayah Sumatera untuk bergabung dengan Republik Indonesia, memperlihatkan perannya sebagai pemersatu bangsa. Tindakan-tindakan tersebut menjadi simbol keteladanan dalam melepaskan kepentingan pribadi demi cita-cita bangsa.
+        </p>
+
+        <div class="foto-gallery">
+          <h3>Dokumentasi Perjuangan</h3>
+          <div class="foto-slot">
+            <img src="img/perjuangan1.jpg" alt="Perjuangan 1" />
+            <img src="img/perjuangan2.jpg" alt="Perjuangan 2" />
+            <img src="img/perjuangan3.jpg" alt="Perjuangan 3" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <footer>
       <p>© 2025. Biografi Sultan Syarif Kasim II | nurfisyahlan</p>
     </footer>
@@ -97,6 +121,24 @@
       }
     }
   </script>
+
+  <script>
+    function bukaPopupPerjuangan() {
+      document.getElementById("popupPerjuangan").classList.add("show");
+    }
+
+    function tutupPopupPerjuangan() {
+      document.getElementById("popupPerjuangan").classList.remove("show");
+    }
+
+    window.addEventListener("click", function (event) {
+      const perjuangan = document.getElementById("popupPerjuangan");
+      if (event.target === perjuangan) {
+        perjuangan.classList.remove("show");
+      }
+    });
+  </script>
+
 
 
 </html>
