@@ -201,6 +201,30 @@ footer p{
   transition: transform 0.3s ease;
 }
 
+.popup-content h2{
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.popup-content p{
+    text-align: justify;
+}
+
+.foto-gallery{
+    text-align: center;
+}
+
+.foto-slot{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;    
+    margin-top: 12px;
+    width: 100%;
+}
+
 /* Saat popup aktif, konten muncul turun sedikit */
 .popup-overlay.show .popup-content {
   transform: translateY(0);
@@ -238,7 +262,6 @@ footer p{
   object-fit: cover;
   border-radius: 8px;
 }
-
 
 
 /* clearfix */
