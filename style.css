@@ -225,6 +225,11 @@ footer p{
     width: 100%;
 }
 
+.foto-slot img:first-child {
+  object-position: 0 10%; /* geser crop dari atas ke bawah */
+}
+
+
 /* Saat popup aktif, konten muncul turun sedikit */
 .popup-overlay.show .popup-content {
   transform: translateY(0);
