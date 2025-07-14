@@ -138,7 +138,7 @@ footer p{
     font-size:12px;    
 }
 
-..sidebar {
+.sidebar {
   width: 300px;
   float: right;
   padding: 20px;
@@ -157,15 +157,15 @@ footer p{
 
 /* Gambar di kiri */
 .profil-container img {
-  width: 150px;
+  width: 110px;
   height: auto;
   border-radius: 10px;
   margin-right: 10px;
+  padding-top:8px;
 }
 
 /* Biodata di kanan */
-.biodata p {
-  padding-top:8px;
+.biodata p { 
   font: 12px/18px poppins;
   text-align: left;
   margin: 0;
